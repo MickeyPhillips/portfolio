@@ -1,4 +1,64 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+:root {
+    --primary-color: #04ffee;
+    --secondary-color: #11577d;
+}
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+header {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    flex: wrap;
+    
+
+}
+header h1 {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    padding: 0 35px;
+    margin: 0;
+
+}
+header a {
+    text-decoration: none;
+    color: var(--primary-color);
+    
+}
+header nav {
+    margin: 7px 0;
+}
+header nav ul {
+    display: flex;
+    flex: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    
+}
+section {
+    padding: 60px;
+}
+.hero {
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+
