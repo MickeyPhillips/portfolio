@@ -15,6 +15,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex: wrap;
+    padding: 20px 35px;
     
 
 }
@@ -22,11 +23,10 @@ header h1 {
     color: var(--secondary-color);
     background-color: var(--primary-color);
     padding: 0 35px;
-    margin: 0;
+    font-size: 40;
 
 }
 header a {
-    text-decoration: none;
     color: var(--primary-color);
     
 }
@@ -41,9 +41,10 @@ header nav ul {
     list-style: none;
 }
 header nav ul li a {
-    padding: 10px 15px;
+    padding: 10px 20px;
     font-weight: lighter;
     font-size: 1.55vw;
+    
     
 }
 section {
@@ -61,4 +62,38 @@ section {
     background-position: 80%;
 }
 
+.section-title {
+    font-size: 48px;
+    color: var(--secondary-color);
+    border-right: 5px solid var(--secondary-color);
+    padding-right: 10px;
+    text-align: right;
+    width: 25%;
+}
+
+
+.contact {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contact-info {
+    margin: 0;
+    flex: 1;
+}
+.contact-info ul {
+    display: flex;
+    flex: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.contact-info ul li a {
+    color: var(--secondary-color);
+    font-size: 24px;
+    margin: 30px;
+}
 
