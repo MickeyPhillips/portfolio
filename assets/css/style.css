@@ -15,16 +15,16 @@ header {
     display: flex;
     justify-content: space-between;
     flex: wrap;
-    padding: 20px 35px;
+    padding: 20px 0px;
+
     
 
 }
 header h1 {
     color: var(--secondary-color);
     background-color: var(--primary-color);
-    padding: 0 35px;
+    padding: 0 50px;
     font-size: 40;
-
 }
 header a {
     color: var(--primary-color);
@@ -61,39 +61,94 @@ section {
     background-attachment: fixed;
     background-position: 80%;
 }
+.column {
+    display: flex;
+    margin: 20px auto;
+}
+.column.side {
+    width: 25%;
+    padding: 40px;
+    justify-content: right;
+    
+
+}
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+.column.main {
+    width: 75%;
+    border-left: 5px solid var(--secondary-color);
+    padding: 40px;
+}
 
 .section-title {
     font-size: 48px;
     color: var(--secondary-color);
-    border-right: 5px solid var(--secondary-color);
     padding-right: 10px;
     text-align: right;
-    width: 25%;
+
 }
-
-
-.contact {
+.project {
     width: 100%;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    padding: 5px;
 }
-
-.contact-info {
-    margin: 0;
-    flex: 1;
-}
-.contact-info ul {
+.project ul {
     display: flex;
     flex: wrap;
     justify-content: space-between;
     align-items: center;
     list-style: none;
 }
-.contact-info ul li a {
+.project ul li a img{
+    flex: 1 1 0;
+    margin-right: 0;
+    height: 200px;
+    width: 400px;
+}
+.project ul li a img:nth-child(1) {
+    flex: 2 1 0;
+}
+.column.main ul {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+}
+/*.column.main ul {
+    display: flex;
+    flex: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    
+}*/
+.column.main ul li a {
     color: var(--secondary-color);
     font-size: 24px;
     margin: 30px;
+}
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 20px;
+    }
 }
 
