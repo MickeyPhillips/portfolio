@@ -2,136 +2,118 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-:root {
+  }
+  :root {
     --primary-color: #04ffee;
     --secondary-color: #11577d;
-}
-body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-}
-header {
-    background-color: var(--secondary-color);
-    display: flex;
-    justify-content: space-between;
-    flex: wrap;
-    padding: 20px 0px;
-
-    
-
-}
-header h1 {
-    color: var(--secondary-color);
-    background-color: var(--primary-color);
-    padding: 0 50px;
-    font-size: 40;
-}
-header a {
-    color: var(--primary-color);
-    
-}
-header nav {
-    margin: 7px 0;
-}
-header nav ul {
-    display: flex;
-    flex: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-}
-header nav ul li a {
-    padding: 10px 20px;
-    font-weight: lighter;
-    font-size: 1.55vw;
-    
-    
-}
-section {
-    padding: 60px;
-}
-.hero {
-    background-image: url("../images/hero-bg.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-attachment: fixed;
-    background-position: 80%;
-}
-.column {
-    display: flex;
-    margin: 20px auto;
-}
-.column.side {
-    width: 25%;
-    padding: 40px;
-    justify-content: right;
-    
-
-}
-.flex-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
   }
-.column.main {
-    width: 75%;
-    border-left: 5px solid var(--secondary-color);
-    padding: 40px;
-}
-
-.section-title {
-    font-size: 48px;
-    color: var(--secondary-color);
-    padding-right: 10px;
-    text-align: right;
-
-}
-.project {
+  body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  header {
+      background-color: var(--secondary-color);
+      display: flex;
+      justify-content: space-between;
+      flex: wrap;
+      padding: 20px 0px;
+  
+  }
+  header h1 {
+      color: var(--secondary-color);
+      background-color: var(--primary-color);
+      padding: 0 50px;
+      font-size: 40;
+  }
+  header a {
+      color: var(--primary-color);
+      
+  }
+  header nav {
+      margin: 7px 0;
+  }
+  header nav ul {
+      display: flex;
+      flex: wrap;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+  }
+  header nav ul li a {
+      padding: 10px 20px;
+      font-weight: lighter;
+      font-size: 1.55vw;
+      
+  }
+  #hero {
+      background-image: url("../images/hero-bg.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      background-attachment: fixed;
+      background-position: 80%;
+  }
+  #container {
+      display: flex;
+      flex-direction: column;
+  }
+  .column-title {
+      width: 25%;
+      padding: 5%;
+      display: flex;
+      justify-content: right;
+      font-size: 150%;
+      
+  }
+  .column-main {
+      width: 75%;
+      border-left: 5px solid var(--secondary-color);
+      padding: 40px;
+      
+  }
+  #about-me {
+    background-color: grey;
+    display: flex;
+  }
+  #work {
+    background-color: tomato;
+    display: flex;
+  }
+  #project {
     width: 100%;
     margin: 0 auto;
     padding: 5px;
-}
-.project ul {
+  }
+  #project ul {
+      display: flex;
+      flex: wrap;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+  }
+  #contact-me {
+    background-color: grey;
     display: flex;
-    flex: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-}
-.project ul li a img{
-    flex: 1 1 0;
-    margin-right: 0;
-    height: 200px;
-    width: 400px;
-}
-.project ul li a img:nth-child(1) {
-    flex: 2 1 0;
-}
-.column.main ul {
+  }
+  #contact-info ul {
     width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    list-style: none;
-}
-/*.column.main ul {
-    display: flex;
-    flex: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    
-}*/
-.column.main ul li a {
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      list-style: none;
+      
+  }
+  #contact-info ul li a {
     color: var(--secondary-color);
     font-size: 24px;
     margin: 30px;
-}
+    display: flex;
+    
+    align-self: center;
+  }
 @media screen and (max-width: 980px) {
     header {
         padding-bottom: 0;
